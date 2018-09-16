@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="664ba516-377b-43d1-bdb9-ad8ef7f45ce7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ViewCell.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ViewCell.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -43,8 +42,8 @@
       <file leaf-file-name="ApplicationFrame.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            <state relative-caret-position="134">
+              <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
               <folding>
                 <element signature="e#37#483#0" expanded="true" />
               </folding>
@@ -717,7 +716,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537041252818</updated>
-      <workItem from="1537041263106" duration="17783000" />
+      <workItem from="1537041263106" duration="18969000" />
     </task>
     <task id="LOCAL-00001" summary="All of the basic functionality works... still need some features">
       <created>1537062803515</created>
@@ -737,11 +736,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17783000" />
+    <option name="totallyTimeSpent" value="18969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1701" height="1417" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -761,9 +759,9 @@
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.25758755" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.25758755" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.2516758" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.2516758" />
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.3298217" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -877,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state relative-caret-position="134">
+          <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
           <folding>
             <element signature="e#37#483#0" expanded="true" />
           </folding>

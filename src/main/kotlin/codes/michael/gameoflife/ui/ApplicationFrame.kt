@@ -20,6 +20,8 @@ class ApplicationFrame() {
   var isStarted: Boolean = false
 
   val jframe: JFrame
+  var generationCountField: JTextField? = null
+  var generationCount = 0
 
   /**
    * Primary constructor for the class (initialize the JFrame)
@@ -62,9 +64,18 @@ class ApplicationFrame() {
       add(createClearButton())
       add(createStartButton())
       add(createStopButton())
+      createGenerationCounter(this)
     }
 
     return toolbar
+  }
+
+
+  fun createGenerationCounter(toolbar: JToolBar)  {
+    toolbar.add(JLabel("Generation: "))
+    generationCountField = JTextField()
+    generationCountField!!.text = generationCount.toString()
+    toolbar.add(generationCountField)
   }
 
   /**
@@ -74,7 +85,7 @@ class ApplicationFrame() {
     val btn = JButton("Next")
 
     btn.addActionListener({
-      gameGrid.computeNextGeneration()
+      nextGeneration()
     })
 
     return btn
@@ -89,6 +100,8 @@ class ApplicationFrame() {
     btn.addActionListener({
       gameGrid.clear()
       isStarted = false
+      generationCount = 0
+      generationCountField!!.text = generationCount.toString()
     })
 
     return btn
@@ -105,7 +118,7 @@ class ApplicationFrame() {
       isStarted = true
       launch {
         while (isStarted) {
-          gameGrid.computeNextGeneration()
+          nextGeneration()
           delay(500)
         }
       }
@@ -189,5 +202,11 @@ class ApplicationFrame() {
     val toolbarSize = toolbar.preferredSize.height
 
     return toolbarSize + gridSizeToUse
+  }
+
+  fun nextGeneration() {
+    gameGrid.computeNextGeneration()
+    generationCount++
+    generationCountField!!.text = generationCount.toString()
   }
 }
