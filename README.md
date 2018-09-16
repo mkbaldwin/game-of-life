@@ -14,5 +14,5 @@ based on the  cell's eight neighboring cells.
 
  * A live cell with less than two live neighbors dies.
  * A live cell with two or three live neighbors lives.
- * A live cell with more than three live neighbors.
+ * A live cell with more than three live neighbors dies.
  * A dead cell with exactly three live cells becomes alive. 

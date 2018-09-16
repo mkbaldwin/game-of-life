@@ -1,9 +1,11 @@
 package codes.michael.gameoflife
 
+import codes.michael.gameoflife.ui.ApplicationFrame
 
-val GRID_ROWS = 30
-val GRID_COLS = 30
-val CELL_SIZE = 20
+
+val GRID_ROWS = 40
+val GRID_COLS = 40
+val CELL_SIZE = 25
 val BORDER_WIDTH = 1
 
 /**
