@@ -1,9 +1,7 @@
 package codes.michael.gameoflife.ui
 
-import codes.michael.gameoflife.BORDER_WIDTH
-import codes.michael.gameoflife.CELL_SIZE
+import codes.michael.gameoflife.*
 import codes.michael.gameoflife.service.GameService
-import java.awt.Color
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
 import javax.swing.BorderFactory
@@ -22,7 +20,7 @@ class ViewCell(val row: Int, val col: Int, gameService: GameService) {
     alive = false
     jlabel.setSize(CELL_SIZE, CELL_SIZE)
     jlabel.isVisible = true
-    jlabel.border = BorderFactory.createLineBorder(Color.GRAY, BORDER_WIDTH)
+    jlabel.border = BorderFactory.createLineBorder(BORDER_COLOR, BORDER_WIDTH)
     jlabel.isOpaque = true
     jlabel.text = " "
 
@@ -38,8 +36,8 @@ class ViewCell(val row: Int, val col: Int, gameService: GameService) {
 
   fun updateColor() {
     jlabel.background = when (alive) {
-      true -> Color.CYAN
-      false -> Color.LIGHT_GRAY
+      true -> ALIVE_COLOR
+      false -> DEAD_COLOR
     }
   }
 }
