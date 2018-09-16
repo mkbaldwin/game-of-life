@@ -1,3 +1,5 @@
+@file:JvmName("Main")
+
 package codes.michael.gameoflife
 
 import codes.michael.gameoflife.service.GameService

@@ -84,7 +84,7 @@ class ApplicationFrame(val gameService: GameService) {
     PATTERN_TEMPLATES.forEach { pattern ->
       val menuItem = JMenuItem(pattern.name)
 
-      menuItem.addActionListener {event ->
+      menuItem.addActionListener {
         val patternFile = pattern.file
         gameService.loadPattern(patternFile)
       }

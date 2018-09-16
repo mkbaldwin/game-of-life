@@ -16,3 +16,24 @@ based on the  cell's eight neighboring cells.
  * A live cell with two or three live neighbors lives.
  * A live cell with more than three live neighbors dies.
  * A dead cell with exactly three live cells becomes alive. 
+ 
+ ## Compiling and Running
+ 
+ This application is written in Kotlin and includes a Gradle build script. The build script should be run using the 
+ gradle wrapper included.
+ 
+ On OS X/Linux:
+ 
+ ```
+ ./gradlew start
+ ```
+
+On Windows:
+
+```
+gradlew.bat start
+```
+ 
+ ## License
+
+This code is published under the [MIT license](LICENSE). 
