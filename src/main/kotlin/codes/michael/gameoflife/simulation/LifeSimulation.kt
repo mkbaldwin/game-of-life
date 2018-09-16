@@ -3,10 +3,8 @@ package codes.michael.gameoflife.simulation
 import codes.michael.gameoflife.GRID_COLS
 import codes.michael.gameoflife.GRID_ROWS
 
-class GameGrid {
-  private var updateFunction: (v: Array<Array<Boolean>>) -> Unit = {}
-
-  var grid = emptyGrid()
+class LifeSimulation {
+  private var grid = emptyGrid()
 
   /**
    * Apply all of the game of life rules
@@ -22,7 +20,6 @@ class GameGrid {
     }
 
     grid = newGeneration
-    updateFunction(grid)
   }
 
   /**
@@ -30,14 +27,6 @@ class GameGrid {
    */
   fun clear() {
     grid = emptyGrid()
-    updateFunction(grid)
-  }
-
-  /**
-   * Define a function to call each time a generation is computed
-   */
-  fun onUpdate(fn: (v: Array<Array<Boolean>>) -> Unit) {
-    updateFunction = fn
   }
 
   /**
@@ -122,5 +111,13 @@ class GameGrid {
    */
   fun updateValue(row: Int, col: Int, alive: Boolean) {
     grid[row][col] = alive
+  }
+
+  /**
+   * Get a copy of the internal values of the game state. Don't return references to the internal state so it can't
+   * be modified.
+   */
+  fun getValues() : Array<Array<Boolean>> {
+    return grid.clone()
   }
 }
