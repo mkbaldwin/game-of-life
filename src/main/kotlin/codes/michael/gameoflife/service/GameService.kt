@@ -9,7 +9,9 @@ import kotlinx.coroutines.experimental.launch
  */
 class GameService(private val lifeSimulation: LifeSimulation) {
   private var isRunning = false
-  private var updateFunctions: MutableList<(v: Array<Array<Boolean>>) -> Unit> = mutableListOf()
+
+  private var gameStateListeners: MutableList<(v: Array<Array<Boolean>>) -> Unit> = mutableListOf()
+  private var generationCountListeners: MutableList<(v: Int) -> Unit> = mutableListOf()
 
   var generationCount = 0
 
@@ -32,7 +34,7 @@ class GameService(private val lifeSimulation: LifeSimulation) {
         while (isRunning) {
           nextGeneration()
           //TODO: Make this configurable somehow in the UI.
-          delay(500)
+          delay(250)
         }
       }
     }
@@ -61,22 +63,34 @@ class GameService(private val lifeSimulation: LifeSimulation) {
   fun clear() {
     isRunning = false
     lifeSimulation.clear()
+    generationCount = 0
     applyUpdateCallbacks()
   }
 
   /**
    * Register a function to receive a callback when the game state updates.
    */
-  fun addOnUpdateFunction(fn: (v: Array<Array<Boolean>>) -> Unit) {
-    updateFunctions.add(fn)
+  fun addGameStateListener(fn: (v: Array<Array<Boolean>>) -> Unit) {
+    gameStateListeners.add(fn)
+  }
+
+  /**
+   * Register a listener for updates to the generation count.
+   */
+  fun addGenerationCountListener(fn: (v: Int) -> Unit) {
+    generationCountListeners.add(fn)
   }
 
   /**
    * Call any of our registered update callback functions.
    */
   private fun applyUpdateCallbacks() {
-    updateFunctions.forEach {
+    gameStateListeners.forEach {
       it(lifeSimulation.getValues())
+    }
+
+    generationCountListeners.forEach {
+      it(generationCount)
     }
   }
 }

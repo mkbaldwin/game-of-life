@@ -1,5 +1,7 @@
 package codes.michael.gameoflife
 
+import codes.michael.gameoflife.service.GameService
+import codes.michael.gameoflife.simulation.LifeSimulation
 import codes.michael.gameoflife.ui.ApplicationFrame
 import java.awt.Color
 
@@ -17,5 +19,8 @@ val ALIVE_COLOR = Color.BLUE
  * Kotlin application starting point.
  */
 fun main(args: Array<String>) {
-  ApplicationFrame()
+  val lifeSimulation = LifeSimulation()
+  val gameService = GameService(lifeSimulation)
+
+  ApplicationFrame(gameService)
 }

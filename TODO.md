@@ -1,7 +1,7 @@
 # TODO
 
 * ApplicationFrame.kt
-  * Move "Grid" implementation to a separate class (extend JPanel)
+  * Move "Grid" implementation to a separate class (extend JPanel) (DONE)
   * Clean up toolbar setup
 
 * General
