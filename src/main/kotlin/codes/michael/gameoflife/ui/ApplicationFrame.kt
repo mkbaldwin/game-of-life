@@ -6,6 +6,8 @@ import codes.michael.gameoflife.GRID_COLS
 import codes.michael.gameoflife.GRID_ROWS
 import codes.michael.gameoflife.service.GameService
 import codes.michael.gameoflife.simulation.GameGrid
+import kotlinx.coroutines.experimental.delay
+import kotlinx.coroutines.experimental.launch
 import java.awt.BorderLayout
 import java.awt.GridLayout
 import javax.swing.*
@@ -14,6 +16,8 @@ import javax.swing.WindowConstants.EXIT_ON_CLOSE
 class ApplicationFrame() {
   val gameGrid = GameGrid()
   val viewGrid = ViewGrid(GameService(gameGrid))
+
+  var isStarted: Boolean = false
 
   val jframe: JFrame
 
@@ -56,6 +60,8 @@ class ApplicationFrame() {
 
       add(createNextButton())
       add(createClearButton())
+      add(createStartButton())
+      add(createStopButton())
     }
 
     return toolbar
@@ -82,6 +88,41 @@ class ApplicationFrame() {
 
     btn.addActionListener({
       gameGrid.clear()
+      isStarted = false
+    })
+
+    return btn
+  }
+
+  /**
+   * Create the start button and its listener
+   */
+  fun createStartButton(): JButton {
+    val btn = JButton("Start")
+
+    btn.addActionListener({
+      //Launch a coroutine to compute the next generation asynchronously
+      isStarted = true
+      launch {
+        while (isStarted) {
+          gameGrid.computeNextGeneration()
+          delay(500)
+        }
+      }
+
+    })
+
+    return btn
+  }
+
+  /**
+   * Create the start button and its listener
+   */
+  fun createStopButton(): JButton {
+    val btn = JButton("Stop")
+
+    btn.addActionListener({
+      isStarted = false
     })
 
     return btn

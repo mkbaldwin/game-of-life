@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="664ba516-377b-43d1-bdb9-ad8ef7f45ce7" name="Default" comment="All of the basic functionality works... still need some features">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/service/GameService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ViewCell.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ViewGrid.kt" afterDir="false" />
+    <list default="true" id="664ba516-377b-43d1-bdb9-ad8ef7f45ce7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/game-of-life_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/game-of-life_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/game-of-life_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/game-of-life_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ApplicationFrame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Cell.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ViewCell.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/GameGrid.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/simulation/GameGrid.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -49,11 +46,29 @@
       <file leaf-file-name="ApplicationFrame.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="84" column="6" lean-forward="true" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+            <state relative-caret-position="391">
+              <caret line="102" column="27" lean-forward="true" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
               <folding>
-                <element signature="e#37#385#0" expanded="true" />
+                <element signature="e#37#483#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradle.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -116,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -328,10 +343,10 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="7674730079864" />
+        <entry key="$PROJECT_DIR$" value="7674796787308" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1581312658" />
-        <entry key="$PROJECT_DIR$/gradle.properties" value="3840008833" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="553586089" />
+        <entry key="$PROJECT_DIR$/gradle.properties" value="715947798" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="3461230605" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1396364313" />
       </map>
@@ -482,8 +497,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gradle.properties" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/ApplicationFrame.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/Main.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ApplicationFrame.kt" />
@@ -497,6 +510,8 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/simulation/Cell.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ViewCell.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/simulation/GameGrid.kt" />
+        <option value="$PROJECT_DIR$/gradle.properties" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt" />
       </list>
     </option>
@@ -702,16 +717,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537041252818</updated>
-      <workItem from="1537041263106" duration="15863000" />
+      <workItem from="1537041263106" duration="17426000" />
     </task>
+    <task id="LOCAL-00001" summary="All of the basic functionality works... still need some features">
+      <created>1537062803515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537062803515</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15863000" />
+    <option name="totallyTimeSpent" value="17426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1701" height="1417" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -726,14 +748,14 @@
       <window_info id="UI Designer" order="1" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info active="true" anchor="bottom" id="Messages" order="3" visible="true" weight="0.3299611" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.3299611" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.25758755" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.25758755" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.2516758" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.2516758" />
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.3298217" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -759,20 +781,6 @@
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradlew.bat">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -796,7 +804,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -841,12 +849,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="84" column="6" lean-forward="true" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+        <state relative-caret-position="391">
+          <caret line="102" column="27" lean-forward="true" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
           <folding>
-            <element signature="e#37#385#0" expanded="true" />
+            <element signature="e#37#483#0" expanded="true" />
           </folding>
         </state>
       </provider>
