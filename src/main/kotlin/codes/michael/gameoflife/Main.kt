@@ -3,6 +3,7 @@ package codes.michael.gameoflife
 import codes.michael.gameoflife.service.GameService
 import codes.michael.gameoflife.simulation.LifeSimulation
 import codes.michael.gameoflife.ui.ApplicationFrame
+import codes.michael.gameoflife.ui.Pattern
 import java.awt.Color
 
 
@@ -14,6 +15,10 @@ val BORDER_WIDTH = 1
 val BORDER_COLOR = Color.GRAY
 val DEAD_COLOR = Color.LIGHT_GRAY
 val ALIVE_COLOR = Color.BLUE
+
+val PATTERN_TEMPLATES = listOf(
+    Pattern("Glider", "Glider.txt")
+)
 
 /**
  * Kotlin application starting point.

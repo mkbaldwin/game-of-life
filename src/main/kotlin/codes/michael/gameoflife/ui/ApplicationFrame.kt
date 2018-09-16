@@ -2,23 +2,27 @@ package codes.michael.gameoflife.ui
 
 import codes.michael.gameoflife.GRID_COLS
 import codes.michael.gameoflife.GRID_ROWS
+import codes.michael.gameoflife.PATTERN_TEMPLATES
 import codes.michael.gameoflife.service.GameService
 import codes.michael.gameoflife.ui.game.GamePanel
 import java.awt.BorderLayout
 import javax.swing.JFrame
+import javax.swing.JMenu
+import javax.swing.JMenuBar
+import javax.swing.JMenuItem
 import javax.swing.WindowConstants.EXIT_ON_CLOSE
 
-class ApplicationFrame(gameService: GameService) {
+class ApplicationFrame(val gameService: GameService) {
   private val gamePanel = GamePanel(GRID_ROWS, GRID_COLS, gameService)
   private val toolBar = ControlsToolbar(gameService)
   private val statusBar = StatusBar()
-  private val jframe = JFrame("Game of Life")
+  private val jFrame = JFrame("Game of Life")
 
   /**
    * Primary constructor for the class (initialize the JFrame)
    */
   init {
-    with(jframe) {
+    with(jFrame) {
       isResizable = false
       defaultCloseOperation = EXIT_ON_CLOSE
       layout = BorderLayout()
@@ -27,6 +31,8 @@ class ApplicationFrame(gameService: GameService) {
       add(toolBar, BorderLayout.NORTH)
       add(gamePanel, BorderLayout.CENTER)
       add(statusBar, BorderLayout.SOUTH)
+
+      createMenuBar()
 
       isVisible = true
     }
@@ -62,6 +68,31 @@ class ApplicationFrame(gameService: GameService) {
     val statusBarSize = statusBar.preferredSize.height
 
     return toolbarSize + gridSizeToUse + statusBarSize
+  }
+
+  /**
+   * Create a menubar for the app
+   */
+  fun createMenuBar() {
+    val menubar = JMenuBar()
+
+    //Create a patterns menu
+    val menu = JMenu("Patterns")
+    menubar.add(menu)
+
+    //Add items for each pattern
+    PATTERN_TEMPLATES.forEach { pattern ->
+      val menuItem = JMenuItem(pattern.name)
+
+      menuItem.addActionListener {event ->
+        val patternFile = pattern.file
+        gameService.loadPattern(patternFile)
+      }
+
+      menu.add(menuItem)
+    }
+
+    jFrame.jMenuBar = menubar
   }
 
 }

@@ -9,17 +9,19 @@ import kotlinx.coroutines.experimental.launch
  */
 class GameService(private val lifeSimulation: LifeSimulation) {
   private var isRunning = false
+  private var generationCount = 0
 
   private var gameStateListeners: MutableList<(v: Array<Array<Boolean>>) -> Unit> = mutableListOf()
   private var generationCountListeners: MutableList<(v: Int) -> Unit> = mutableListOf()
 
-  var generationCount = 0
+  var delayMs = 250
 
   /**
    * Update an individual value in the simulation.
    */
   fun updateValue(row: Int, col: Int, alive: Boolean) {
     lifeSimulation.updateValue(row, col, alive)
+    applyUpdateCallbacks()
   }
 
   /**
@@ -34,7 +36,7 @@ class GameService(private val lifeSimulation: LifeSimulation) {
         while (isRunning) {
           nextGeneration()
           //TODO: Make this configurable somehow in the UI.
-          delay(250)
+          delay(delayMs)
         }
       }
     }
@@ -79,6 +81,26 @@ class GameService(private val lifeSimulation: LifeSimulation) {
    */
   fun addGenerationCountListener(fn: (v: Int) -> Unit) {
     generationCountListeners.add(fn)
+  }
+
+  /**
+   * Load a pattern from a file on the classpath
+   */
+  fun loadPattern(file: String) {
+    clear()
+
+    val inStream = javaClass.getResourceAsStream("/patterns/${file}")
+    val stringContent = inStream.readBytes().toString(Charsets.UTF_8)
+
+    //Convert to lines
+    val lines = stringContent.split("\n")
+
+    lines.forEach {line ->
+      val point = line.split(",")
+      lifeSimulation.updateValue(point[0].toInt(), point[1].toInt(), true)
+    }
+
+    applyUpdateCallbacks()
   }
 
   /**

@@ -7,6 +7,7 @@ import java.awt.event.MouseEvent
 import javax.swing.BorderFactory
 import javax.swing.JLabel
 
+
 /**
  * Represents an individual cell in the visualization of the simulation. This basically just wraps a JLabel with some
  * additional functionality. The label is just used to provide a square of color that is clickable.
@@ -34,19 +35,24 @@ class Cell(val row: Int, val col: Int, val gameService: GameService) {
       updateColor()
 
       gameService.updateValue(row, col, alive)
+
+      println("$row,$col,$alive")
     }
   }
 
   init {
     //Configure the label properties
-    jLabel.setSize(CELL_SIZE, CELL_SIZE)
-    jLabel.isVisible = true
-    jLabel.border = BorderFactory.createLineBorder(BORDER_COLOR, BORDER_WIDTH)
-    jLabel.isOpaque = true
-    jLabel.background = DEAD_COLOR
+    with(jLabel) {
+      setSize(CELL_SIZE, CELL_SIZE)
+      isVisible = true
+      border = BorderFactory.createLineBorder(BORDER_COLOR, BORDER_WIDTH)
+      isOpaque = true
+      background = DEAD_COLOR
+      toolTipText = "$row,$col"
 
-    //Add a click listener to change the state when someone clicks on a cell
-    jLabel.addMouseListener(mouseListener)
+      //Add a click listener to change the state when someone clicks on a cell
+      addMouseListener(mouseListener)
+    }
   }
 
   /**
