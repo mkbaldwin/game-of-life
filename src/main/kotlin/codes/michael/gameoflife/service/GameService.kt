@@ -97,7 +97,9 @@ class GameService(private val lifeSimulation: LifeSimulation) {
 
     lines.forEach {line ->
       val point = line.split(",")
-      lifeSimulation.updateValue(point[0].toInt(), point[1].toInt(), true)
+      if(point[0].length > 0 && point[1].length > 0) {
+        lifeSimulation.updateValue(point[0].toInt(), point[1].toInt(), true)
+      }
     }
 
     applyUpdateCallbacks()

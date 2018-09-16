@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="664ba516-377b-43d1-bdb9-ad8ef7f45ce7" name="Default" comment="Add the ability to load predefined patterns">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/Pattern.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/Glider.txt" afterDir="false" />
+    <list default="true" id="664ba516-377b-43d1-bdb9-ad8ef7f45ce7" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/10cell.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/Acorn.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/Exploder.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/F-pintomino.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/GosperGlider.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/LightWeightSpaceShip.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/SmallExploder.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/Tumbler.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/service/GameService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/service/GameService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ControlsToolbar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ControlsToolbar.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/game/Cell.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/game/Cell.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -48,68 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ApplicationFrame.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
-              <folding>
-                <element signature="e#37#458#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControlsToolbar.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ControlsToolbar.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-              <folding>
-                <element signature="e#37#215#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameService.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/service/GameService.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
-              <folding>
-                <element signature="e#42#190#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cell.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/game/Cell.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-              <folding>
-                <element signature="e#42#254#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Glider.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/Glider.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="459">
+              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
               <folding>
                 <element signature="e#34#217#0" expanded="true" />
               </folding>
@@ -117,13 +63,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LifeSimulation.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/simulation/LifeSimulation.kt">
+      <file leaf-file-name="Exploder.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/Exploder.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="111" column="6" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
+            <state relative-caret-position="187">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GosperGlider.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/GosperGlider.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameService.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/service/GameService.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
               <folding>
-                <element signature="e#45#128#0" expanded="true" />
+                <element signature="e#42#190#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,6 +107,7 @@
     <findStrings>
       <find>ViewCell</find>
       <find>print</find>
+      <find>,true</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -511,11 +476,19 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/game/Cell.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/patterns/Glider.txt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/Pattern.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/MenuBar.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/service/GameService.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ControlsToolbar.kt" />
+        <option value="$PROJECT_DIR$/src/main/resources/patterns/LightWeightSpaceShip.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/patterns/F-pintomino.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/patterns/Acorn.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/patterns/SmallExploder.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/patterns/10cell.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/patterns/Tumbler.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/patterns/Exploder.txt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/service/GameService.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt" />
+        <option value="$PROJECT_DIR$/src/main/resources/patterns/GosperGlider.txt" />
       </list>
     </option>
   </component>
@@ -534,7 +507,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1294" />
+    <option name="width" value="1415" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -741,7 +714,7 @@
       <option name="presentableId" value="Default" />
       <updated>1537041252818</updated>
       <workItem from="1537041263106" duration="19786000" />
-      <workItem from="1537103605879" duration="16946000" />
+      <workItem from="1537103605879" duration="19361000" />
     </task>
     <task id="LOCAL-00001" summary="All of the basic functionality works... still need some features">
       <created>1537062803515</created>
@@ -792,14 +765,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537113594846</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add the ability to load predefined patterns">
+      <created>1537131598333</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1537131598333</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36732000" />
+    <option name="totallyTimeSpent" value="39147000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1294" height="1417" extended-state="0" />
+    <frame x="-7" y="0" width="1415" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="6" />
@@ -814,15 +794,15 @@
       <window_info id="UI Designer" order="1" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info active="true" anchor="bottom" id="Messages" order="3" visible="true" weight="0.3299611" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.3299611" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.25836575" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.25836575" />
       <window_info anchor="right" id="Coverage" sideWeight="0.50052464" side_tool="true" weight="0.24959481" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.33873582" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.3084871" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32998455" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.3298217" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -1031,30 +1011,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/game/Cell.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-          <folding>
-            <element signature="e#42#254#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/Pattern.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#34#217#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1064,16 +1024,6 @@
           <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
             <element signature="e#37#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
-          <folding>
-            <element signature="e#37#458#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1088,6 +1038,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ApplicationFrame.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+          <folding>
+            <element signature="e#37#458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ControlsToolbar.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+          <folding>
+            <element signature="e#37#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/LightWeightSpaceShip.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/game/Cell.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+          <folding>
+            <element signature="e#42#254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/Glider.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1095,23 +1082,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/F-pintomino.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/Acorn.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/SmallExploder.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/10cell.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/Tumbler.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/service/GameService.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+        <state relative-caret-position="579">
+          <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
           <folding>
             <element signature="e#42#190#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/ui/ControlsToolbar.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/Exploder.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/codes/michael/gameoflife/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
           <folding>
-            <element signature="e#37#215#0" expanded="true" />
+            <element signature="e#34#217#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/patterns/GosperGlider.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
         </state>
       </provider>
     </entry>

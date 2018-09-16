@@ -17,7 +17,15 @@ val DEAD_COLOR = Color.LIGHT_GRAY
 val ALIVE_COLOR = Color.BLUE
 
 val PATTERN_TEMPLATES = listOf(
-    Pattern("Glider", "Glider.txt")
+    Pattern("Glider", "Glider.txt"),
+    Pattern("Light Weight Space Ship", "LightWeightSpaceShip.txt"),
+    Pattern("F-pintomino", "F-pintomino.txt"),
+    Pattern("Acorn", "Acorn.txt"),
+    Pattern("Small Exploder", "SmallExploder.txt"),
+    Pattern("Exploder", "Exploder.txt"),
+    Pattern("10 Cell Row", "10cell.txt"),
+    Pattern("Tumbler", "Tumbler.txt"),
+    Pattern("Gosper Glider Gun", "GosperGlider.txt")
 )
 
 /**
